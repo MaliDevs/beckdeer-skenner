@@ -22,7 +22,7 @@ return {
 		["AdminRemotes"] = function(remoteObj)
 			local remoteObjPath = remoteObj:GetFullName()
 
-			return remoteObj:IsDescendantOf(game:GetService("ReplicatedStorage")) and (string.find(remoteObjPath, "HDAdminClient") or string.find(remoteObjPath, "Basic Admin Essentials"))
+			return remoteObj:IsDescendantOf(game:GetService("ReplicatedStorage")) and (string.find(remoteObjPath, "HDAdminHDClient") or string.find(remoteObjPath, "Basic Admin Essentials"))
 		end,
 		["AdonisRemotes"] = function(remoteObj)
 			return (
